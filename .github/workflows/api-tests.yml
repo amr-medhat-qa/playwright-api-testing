@@ -1,4 +1,4 @@
-﻿name: API Tests
+name: API Tests
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '0 5 * * 1-5' # weekdays 05:00 UTC â€” detects contract drift in the API under test
+    - cron: '0 5 * * 1-5' # weekdays 05:00 UTC — detects contract drift in the API under test
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
